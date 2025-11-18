@@ -147,7 +147,7 @@ function App() {
       <section className="container section">
         <h2 className="section__title">Experience</h2>
         <div className="timeline">
-          {experience.map((e) => (
+          {experience.slice().reverse().map((e) => (
             <div key={`${e.date}-${e.role}`} className="timeline__item">
               <div className="timeline__dot" />
               <div className="timeline__content">
